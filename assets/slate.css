@@ -1,0 +1,430 @@
+/*!
+ * Dash Bootstrap CSS v0.2.0
+ * Copyright 2019-2021 Faculty
+ * Licensed under Apache-2.0
+ * Based on Bootstrap and Bootswatch
+*/
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #ee5f5b;
+  --orange: #fd7e14;
+  --yellow: #f89406;
+  --green: #62c462;
+  --teal: #20c997;
+  --cyan: #5bc0de;
+  --white: #fff;
+  --gray: #7a8288;
+  --gray-dark: #3a3f44;
+  --primary: #3a3f44;
+  --secondary: #7a8288;
+  --success: #62c462;
+  --info: #5bc0de;
+  --warning: #f89406;
+  --danger: #ee5f5b;
+  --light: #e9ecef;
+  --dark: #272b30;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.dash-bootstrap .SingleDatePicker,
+.dash-bootstrap .DateRangePicker {
+  display: block;
+}
+
+.dash-bootstrap .SingleDatePickerInput,
+.dash-bootstrap .DateRangePickerInput {
+  background-color: #fff;
+  color: #52575c;
+  display: block;
+}
+
+.dash-bootstrap .SingleDatePickerInput__withBorder,
+.dash-bootstrap .DateRangePickerInput__withBorder {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  display: flex;
+}
+
+.dash-bootstrap .DateInput {
+  background: transparent;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.dash-bootstrap .DateInput > input::placeholder {
+  color: #7a8288;
+  opacity: 1;
+}
+
+.dash-bootstrap .DateInput > input::-ms-input-placeholder {
+  color: #7a8288;
+}
+
+.dash-bootstrap .DateInput > input:-ms-input-placeholder {
+  color: #7a8288;
+}
+
+.dash-bootstrap .DateInput_input {
+  padding: 0.75rem 1rem;
+  height: calc(1.5em + 1.5rem);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  border-bottom: 0;
+  background: transparent;
+  text-align: center;
+  color: #52575c;
+}
+
+.dash-bootstrap .DateRangePickerInput_arrow {
+  color: #52575c;
+  align-self: center;
+  padding: 0px 10px;
+}
+
+.dash-bootstrap .DateInput_fang.DateInput_fang_1 {
+  top: calc(calc(1.5em + 1.5rem + 2px) + 10px) !important;
+}
+
+.dash-bootstrap .DateInput_fang.DateInput_fang_1 .DateInput_fangShape {
+  fill: #32383e;
+}
+
+.dash-bootstrap .DateInput_fang.DateInput_fang_1 .DateInput_fangStroke {
+  stroke: rgba(0, 0, 0, 0.2);
+}
+
+.dash-bootstrap .SingleDatePicker_picker,
+.dash-bootstrap .DateRangePicker_picker {
+  top: calc(calc(1.5em + 1.5rem + 2px) + 21px) !important;
+  background-color: transparent;
+}
+
+.dash-bootstrap .DayPicker {
+  background: #32383e;
+}
+
+.dash-bootstrap .DayPicker.DayPicker__withBorder {
+  border-radius: 0.3rem;
+}
+
+.dash-bootstrap .DayPicker_weekHeader {
+  color: #b0b7bf;
+}
+
+.dash-bootstrap .DayPickerNavigation_button {
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #32383e;
+}
+
+.dash-bootstrap .DayPickerNavigation_button svg {
+  fill: #aaa;
+}
+
+.dash-bootstrap .DayPickerNavigation_button:hover {
+  background: #3e444c;
+}
+
+.dash-bootstrap .DayPickerNavigation_button:hover svg {
+  fill: #fff;
+}
+
+.dash-bootstrap .CalendarMonth_caption {
+  color: #aaa;
+}
+
+.dash-bootstrap .CalendarMonthGrid {
+  background-color: #32383e;
+}
+
+.dash-bootstrap .CalendarMonth {
+  background-color: #32383e;
+}
+
+.dash-bootstrap .CalendarDay__default {
+  color: #aaa;
+  border-color: #49515a;
+  background-color: transparent;
+}
+
+.dash-bootstrap .CalendarDay__default:hover {
+  background: #3e444c;
+  border-color: #49515a;
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarDay__default.CalendarDay__selected, .dash-bootstrap .CalendarDay__default.CalendarDay__selected:hover {
+  background: #3a3f44;
+  border: 1px double #3a3f44;
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarDay__default.CalendarDay__hovered_span, .dash-bootstrap .CalendarDay__default.CalendarDay__hovered_span:hover {
+  background: #232628;
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarDay__default.CalendarDay__blocked_out_of_range, .dash-bootstrap .CalendarDay__default.CalendarDay__blocked_out_of_range:hover {
+  color: #49515a;
+  border-color: #49515a;
+  background: #32383e;
+  cursor: default;
+}
+
+.dash-bootstrap .CalendarDay__outside {
+  border: 0;
+  cursor: default;
+}
+
+.dash-bootstrap .DayPicker_transitionContainer {
+  border-radius: calc(0.3rem - 1px);
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts_show::before {
+  content: none;
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts_show__bottomRight {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid #3a3f44;
+  border-left: 16px solid transparent;
+  border-right: 16px solid #3a3f44;
+  border-bottom-right-radius: calc( 0.3rem - 1px);
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts_show__bottomRight::before {
+  border-right: 0;
+  border-top: 0;
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts_show__bottomRight:hover {
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid #282c2f;
+  border-left: 16px solid transparent;
+  border-right: 16px solid #282c2f;
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts_show__bottomRight .DayPickerKeyboardShortcuts_showSpan {
+  bottom: -11px;
+  right: -12px;
+  color: #fff;
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts_panel {
+  background: #32383e;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  color: #aaa;
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts_panel .DayPickerKeyboardShortcuts_closeSvg {
+  fill: #aaa;
+}
+
+.dash-bootstrap .Select-control {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  color: #52575c;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  height: calc(1.5em + 1.5rem + 2px);
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dash-bootstrap .Select-control {
+    transition: none;
+  }
+}
+
+.dash-bootstrap .Select-control:hover {
+  box-shadow: none;
+}
+
+.dash-bootstrap .is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.dash-bootstrap .is-focused:not(.is-open) > .Select-control {
+  border-color: #757f89;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(58, 63, 68, 0.25);
+}
+
+.dash-bootstrap .Select.is-disabled > .Select-control {
+  background-color: #ccc;
+}
+
+.dash-bootstrap .has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.dash-bootstrap .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #52575c;
+}
+
+.dash-bootstrap .Select-multi-value-wrapper {
+  height: calc(1.5em + 1.5rem);
+}
+
+.dash-bootstrap .Select-placeholder {
+  color: #7a8288;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dash-bootstrap .Select--single > .Select-control .Select-value,
+.dash-bootstrap .Select-placeholder {
+  line-height: calc(1.5em + 1.5rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dash-bootstrap .Select-input {
+  height: calc(1.5em + 1.5rem);
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.dash-bootstrap .Select-input > input {
+  line-height: 1.5;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.dash-bootstrap .Select--multi .Select-value {
+  background-color: rgba(58, 63, 68, 0.1);
+  border-color: rgba(58, 63, 68, 0.25);
+  border-radius: 0.125rem;
+  box-sizing: content-box;
+  font-size: 0.9375rem;
+  color: #3a3f44;
+  height: calc(0.9375rem * 1.5);
+  margin-top: calc(0.75rem - 1px);
+}
+
+.dash-bootstrap .Select--multi .Select-value-icon {
+  border-right-color: rgba(58, 63, 68, 0.25);
+  line-height: calc(0.9375rem * 1.5);
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: top;
+}
+
+.dash-bootstrap .Select--multi .Select-value-icon:hover {
+  background-color: rgba(58, 63, 68, 0.2);
+  color: #3a3f44;
+  border-radius: 0.125rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.dash-bootstrap .Select--multi .Select-value-label {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: calc(0.9375rem * 1.5);
+  height: calc(0.9375rem * 1.5);
+  vertical-align: top;
+}
+
+.dash-bootstrap .Select-menu-outer {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-color: #ced4da;
+  box-shadow: none;
+  color: #52575c;
+}
+
+.dash-bootstrap .VirtualizedSelectOption {
+  height: calc(1.5em + 0.75rem) !important;
+  padding-left: 1rem;
+}
+
+.dash-bootstrap .VirtualizedSelectFocusedOption {
+  background-color: rgba(58, 63, 68, 0.1) !important;
+}
+
+.dash-bootstrap .rc-slider {
+  height: 0.5rem;
+  padding: 0;
+}
+
+.dash-bootstrap .rc-slider-handle {
+  border: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-top: calc( (0.5rem - 1rem) / 2);
+  margin-left: -0.5rem;
+  background-color: #3a3f44;
+  border-radius: 1rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dash-bootstrap .rc-slider-handle {
+    transition: none;
+  }
+}
+
+.dash-bootstrap .rc-slider-handle:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1px #272b30, 0 0 0 0.2rem rgba(58, 63, 68, 0.25);
+}
+
+.dash-bootstrap .rc-slider-rail {
+  background-color: #dee2e6;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.dash-bootstrap .rc-slider-track {
+  background-color: #898c8f;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.dash-bootstrap .rc-slider-step {
+  height: 0.5rem;
+}
+
+.dash-bootstrap .rc-slider-dot {
+  border: 0;
+  background-color: #dee2e6;
+  bottom: calc( (0.5rem - 1rem) / 2 + 2px);
+  margin-left: -0.5rem;
+  height: calc(1rem - 4px);
+  width: calc(1rem - 4px);
+}
+
+.dash-bootstrap .rc-slider-dot.rc-slider-dot-active {
+  background-color: #898c8f;
+}
+
+.dash-bootstrap .rc-slider-mark-text {
+  color: #7a8288;
+}
+
+.dash-bootstrap .rc-slider-mark-text.rc-slider-mark-text-active {
+  color: #ced4da;
+}
