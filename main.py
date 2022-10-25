@@ -29,22 +29,22 @@ def task_item(text, index, task_type):
                 ] +
                 ([dbc.Col(
                     [
-                        dbc.Button(id={'type': 'bottom', 'index': index}, children=[
+                        dbc.Button(id={'type': 'bottom', 'index': index}, size="sm", children=[
                             DashIconify(icon="material-symbols:keyboard-double-arrow-down-rounded")
                         ]),
-                        dbc.Button(id={'type': 'down', 'index': index}, children=[
+                        dbc.Button(id={'type': 'down', 'index': index}, size="sm", children=[
                             DashIconify(icon="material-symbols:keyboard-arrow-down-rounded")
                         ]),
-                        dbc.Button(id={'type': 'up', 'index': index}, children=[
+                        dbc.Button(id={'type': 'up', 'index': index}, size="sm", children=[
                             DashIconify(icon="material-symbols:keyboard-arrow-up-rounded")
                         ]),
-                        dbc.Button(id={'type': 'top', 'index': index}, children=[
+                        dbc.Button(id={'type': 'top', 'index': index}, size="sm", children=[
                             DashIconify(icon="material-symbols:keyboard-double-arrow-up-rounded")
                         ]),
-                        dbc.Button(id={'type': 'del', 'index': index}, children=[
+                        dbc.Button(id={'type': 'del', 'index': index}, size="sm", children=[
                             DashIconify(icon="fluent:delete-32-regular")
                         ]),
-                        dbc.Button(id={'type': 'tick', 'index': index}, children=[
+                        dbc.Button(id={'type': 'tick', 'index': index}, size="sm", children=[
                             DashIconify(icon="charm:tick")
                         ]),
                     ], className='d-flex justify-content-end',
