@@ -135,7 +135,7 @@ def run_app():
             current_tasks['completed'].append(todos[trigger_index])
             todos.pop(trigger_index)
         elif trigger_type == 'carry':
-            date_before = dt.strftime(dt.strptime(active_date, '%Y-%M-%d') - timedelta(days=1), '%Y-%M-%d')
+            date_before = dt.strftime(dt.strptime(active_date, '%Y-%m-%d').date() - timedelta(days=1), '%Y-%m-%d')
             todos.extend(tasks[date_before]['todo'])
 
         current_tasks['todo'] = todos
